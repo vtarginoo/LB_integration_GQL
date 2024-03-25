@@ -6,7 +6,6 @@ import httpx
 
 
 API_KEY = "AIzaSyDmLXYIH0UVZ23GapjdDVUxgR0iOhKI-S0"
-#API_KEY = "Descomentar"
 BASE_URL = "https://www.googleapis.com/books/v1/volumes"
 
 
