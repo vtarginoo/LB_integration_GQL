@@ -11,7 +11,7 @@ from starlette.responses import Response
 app = Starlette()
 
 # Lista de origens permitidas
-origins = ["http://localhost:5173"]
+origins = ["http://localhost:5173", "https://main--zesty-gaufre-81c1f3.netlify.app/"]
 
 # Aplica o middleware CORS
 app.add_middleware(
