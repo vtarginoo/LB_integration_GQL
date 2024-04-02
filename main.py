@@ -27,7 +27,8 @@ app.add_middleware(
 @app.route("/graphql", methods=["OPTIONS","POST","GET"])
 async def graphql_options(request):
     return Response(headers={
-        "Access-Control-Allow-Origin": "http://localhost:5173",
+        # "Access-Control-Allow-Origin": "http://localhost:5173",
+        "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST",
         "Access-Control-Allow-Headers": "Content-Type",
     })
