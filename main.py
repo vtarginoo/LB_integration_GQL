@@ -16,7 +16,7 @@ origins = ["http://localhost:5173", "https://main--zesty-gaufre-81c1f3.netlify.a
 # Aplica o middleware CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],  # Permite todos os cabeçalhos

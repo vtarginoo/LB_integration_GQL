@@ -1,11 +1,14 @@
 import typing
 import urllib.parse
 from schemas.types import BookInfo, IndustryIdentifier, ImageLinks
-# from schemas.data import bookData
 import httpx
 
+import os
+from dotenv import load_dotenv
 
-API_KEY = "AIzaSyDmLXYIH0UVZ23GapjdDVUxgR0iOhKI-S0"
+load_dotenv()  # Carrega as variáveis de ambiente do arquivo .env
+
+API_KEY = os.getenv('API_KEY')
 BASE_URL = "https://www.googleapis.com/books/v1/volumes"
 
 
